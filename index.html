@@ -1,0 +1,241 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    flex: 0 0 auto;
+  }
+  
+  .container {
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    position: relative;
+    .hand-popup {
+  position:absolute; 
+  top: 50%;        
+  left: 50%;       
+  width: 90%;      
+  max-width: 500px; 
+  z-index: 10;     
+  animation: slideDown 1.5s ease-out forwards;
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    object-fit: fill;
+  
+}
+
+.hand-popup img {
+  width: 100%; /* Makes image responsive */
+  height:100%; /* Maintains aspect ratio */
+  border-radius: 10px; /* Optional: Rounded corners */
+  object-fit: fill;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .header .location {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .header .profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ddd;
+  }
+
+  .search-bar {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 20px;
+    padding: 5px 15px;
+  }
+  
+  .search-bar input {
+    border: none;
+    background: none;
+    flex: 1;
+    outline: none;
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .search-bar svg {
+    width: 20px;
+    height: 20px;
+    color: #888;
+  }
+  
+  .section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .categories {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+  
+  .category {
+    flex-shrink: 0;
+    padding: 10px 15px;
+    background: #fff;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .category.active {
+    background-color: #ffd700;
+    color: #fff;
+  }
+  
+  .promo-banner {
+    position: relative;
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-inline-start: -40px;
+    margin-top: -25px;
+      width: 500px;
+      height: 170px; 
+      clip-path: inset(37px 67px 10px 50px);
+      align-items: center;
+  }
+  
+  .promo-banner img {
+    height: auto;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+  }
+  
+  .food-items  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .food-item {
+    width: 75%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .food-item img {
+    width: 50%;
+    border-radius: 10px;
+  }
+  
+  .food-item h4 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+  }
+  
+  .food-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .food-item .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #ffd700;
+  }
+  
+  .hand-popup {
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    z-index: 10;
+    animation: slideDown 1.5s ease-out forwards;
+  }
+  
+  @keyframes slideDown {
+    0% {
+      top: -150px;
+      opacity: 0;
+    }
+    100% {
+      top: 10px;
+      opacity: 1;
+    }
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
